@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E48C30F0-E990-47AB-938C-73C5E3839FBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FilmMovie</RootNamespace>
+    <AssemblyName>FilmMovie</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CardSlider.Designer.cs">
+      <DependentUpon>CardSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_VideoPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_VideoPlayer.Designer.cs">
+      <DependentUpon>Form_VideoPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmBox.Designer.cs">
+      <DependentUpon>FilmBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SliderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SliderPanel.Designer.cs">
+      <DependentUpon>SliderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TopBar.Designer.cs">
+      <DependentUpon>TopBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2_Cards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2_Cards.Designer.cs">
+      <DependentUpon>UserControl2_Cards.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CardSlider.resx">
+      <DependentUpon>CardSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_VideoPlayer.resx">
+      <DependentUpon>Form_VideoPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmBox.resx">
+      <DependentUpon>FilmBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SliderPanel.resx">
+      <DependentUpon>SliderPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopBar.resx">
+      <DependentUpon>TopBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2_Cards.resx">
+      <DependentUpon>UserControl2_Cards.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-right-button-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-prev-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-movie-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-movie-theater-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-film-reel-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HarryPotter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThisIsUs.jpg" />
+    <None Include="Resources\TheWalkingDead.jpg" />
+    <None Include="Resources\UmudunuKaybetme.jpg" />
+    <None Include="Resources\Titanik.jpg" />
+    <None Include="Resources\ThePianist.jpg" />
+    <None Include="Resources\kittyKat.jpg" />
+    <None Include="Resources\HerCocukOzeldir.jpg" />
+    <None Include="Resources\HababamSinifi.jpg" />
+    <None Include="Resources\AkilOyunlari.jpg" />
+    <None Include="Resources\NefesVatanSagolsun.jpg" />
+    <None Include="Resources\SelviBoylumAlYazmalim.jpg" />
+    <None Include="Resources\3idiots.jpg" />
+    <None Include="Resources\Diziler.bmp" />
+    <None Include="Resources\Alma.jpg" />
+    <None Include="Resources\Alexa.jpg" />
+    <None Include="Resources\TheCrown.jpg" />
+    <None Include="Resources\SuperNatural.jpg" />
+    <None Include="Resources\Lost.jpg" />
+    <None Include="Resources\LaCasaDePapel.jpg" />
+    <None Include="Resources\PrisonBreak.jpg" />
+    <None Include="Resources\DoctorWho.jpg" />
+    <None Include="Resources\RiseOfEmpires.jpg" />
+    <None Include="Resources\BreakingBad.jpg" />
+    <None Include="Resources\HowIMetYouMother.jpg" />
+    <None Include="Resources\Sherlock.jpg" />
+    <Content Include="Resources\TheGame.jpg" />
+    <None Include="Resources\TheGame1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{5abc4938-5768-4dce-8a60-04f3b429b91b}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{d41b5cc4-43c5-44a2-893a-e02d5d771d09}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
